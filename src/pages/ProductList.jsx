@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react'
-import Product from './Product'
+import Product from '../components/Product'
 import axios from "axios"
 import useAxios from '../Hooks/useAxios';
-import Spinner from './Spinner';
+import Spinner from '../components/Spinner';
 
 
 function ProductList() {
@@ -21,7 +21,7 @@ function ProductList() {
     //     getProducts();
 
     // }, []); 
-    // console.log(data)
+    console.log(data)
     if (isLoading) return <Spinner/>
     if (error) return <p>{error}</p>
     return  (
