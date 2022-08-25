@@ -9,7 +9,6 @@ function TaskItem({task, handleDelete}) {
                 />
                 <div className="flex-1">{task.text}</div>
             </div>
-                <div className="flex-1">{task.text}</div>
                 
                 <button className="bg-blue-600 p-2 rounded-md"
                 onClick={() => handleDelete(task.id)}
