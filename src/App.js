@@ -16,6 +16,7 @@ import Navbar from "./components/Navbar";
 import NotFound from "./pages/NotFound";
 import ProductDetail from "./pages/ProductDetail";
 import Login from "./pages/Login";
+import LoginItem from "./components/LoginItem";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/LoginItem" element={<LoginItem />} />
       </Routes>
     </BrowserRouter>
   );
