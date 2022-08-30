@@ -7,10 +7,10 @@ function useLocalStorage (key, initialValue) {
         if (!result) return initialValue;
         return JSON.parse(result);
     });
-    const setValue = (value) => {
-        const newData = [value, ...data];
-        setData(newData);
-    };
+    const setValue = (value) => setData(value);
+        // const newData = [value, ...data];
+       
+    
     useEffect(() => {
         localStorage.setItem(key, JSON.stringify(data))
 
